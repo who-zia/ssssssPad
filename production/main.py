@@ -81,7 +81,7 @@ GAME_S = KC.make_key(on_press=move_down)
 GAME_D = KC.make_key(on_press=move_right)
 
 # OLED SETUP
-i2c_bus = busio.I2C(board.D1, board.D0)
+i2c_bus = busio.I2C(board.D5, board.D4)
 driver = SSD1306(i2c=i2c_bus, width=128, height=64)
 
 def get_header():
